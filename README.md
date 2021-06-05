@@ -32,7 +32,7 @@ You can use the `Convert_Grayscale.ipynb` script to convert images to grayscale.
 
 ------------
 
-Place your 256 x 256 training images from Places 365 or some other dataset **directly** under the `Grayscale_Colorize/places365` folder. Images should be renamed as `0.jpg`, `1.jpg`, `2.jpg` and so on.
+Place your 256 x 256 training images from Places 365 or some other dataset **directly** under the `Grayscale_Colorize/places365` folder. Images should be renamed as `0.jpg`, `1.jpg`, `2.jpg` and so on. You can do this using a simple python script (os library).
 
 Open `Grayscale_Colorize.ipynb` in Google Colab. Change the runtime type to **GPU** and Mount Google drive.
 
@@ -41,3 +41,17 @@ All the parameters and file paths are in Code cell 5
 Run from top to bottom.
 
 After the training is complete, go to `Grayscale_Colorize/checkpoints/weights` folder. The discriminator and generator associated with your last epoch are the final models. Only generator is needed to colorize new samples.
+
+------------
+
+#### Sample Output
+
+| Ground Truth  | Test Input  | Test Output  |
+| :------------: | :------------: | :------------: |
+| ![i1](Grayscale_Colorize/ground_truth/01.jpg) | ![i2](Grayscale_Colorize/test_input/01.jpg) | ![i3](Grayscale_Colorize/test_output/01.jpg) |
+| ![i1](Grayscale_Colorize/ground_truth/02.jpg) | ![i2](Grayscale_Colorize/test_input/02.jpg) | ![i3](Grayscale_Colorize/test_output/02.jpg) |
+| ![i1](Grayscale_Colorize/ground_truth/03.jpg) | ![i2](Grayscale_Colorize/test_input/03.jpg) | ![i3](Grayscale_Colorize/test_output/03.jpg) |
+| ![i1](Grayscale_Colorize/ground_truth/04.jpg) | ![i2](Grayscale_Colorize/test_input/04.jpg) | ![i3](Grayscale_Colorize/test_output/04.jpg) |
+| ![i1](Grayscale_Colorize/ground_truth/05.jpg) | ![i2](Grayscale_Colorize/test_input/05.jpg) | ![i3](Grayscale_Colorize/test_output/05.jpg) |
+
+

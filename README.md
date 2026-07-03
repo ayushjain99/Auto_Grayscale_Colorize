@@ -1,6 +1,6 @@
 # Auto-Colorization of Grayscale Images using Generative Adversarial Networks (GANs)
 
-### B.Tech Final Year Project
+### MBA Sem 1 Project
 
 ------------
 
